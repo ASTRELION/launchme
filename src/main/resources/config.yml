@@ -1,0 +1,63 @@
+# -----------------------
+# | LaunchMe            |
+# | by ASTRELION        |
+# | https://example.com |
+# -----------------------
+
+### GENERAL ###
+
+# Enable/disable this plugin entirely
+enable: true
+
+# Should other mobs like skeletons ride projectiles they fire?
+# Set to true if you want skeletons to ride their arrows, witches to ride their potions,
+# drowned to ride their tridents, snow golems to ride their snowballs, etc.
+# DEFAULT: false
+enableMobLaunches: false
+
+# Should a ride-able projectile replace the player's current vehicle?
+# Set to true if you want to be able to launch yourself while already being launched,
+# or if you want players to be able to launch themselves while in boats or minecarts
+# DEFAULT: true
+shouldResetVehicle: true
+
+# Cooldown time required between launches in TICKS (20 ticks per second)
+# https://minecraft.gamepedia.com/Tick
+# DEFAULT: 100 (5 seconds)
+cooldownTime: 100
+
+### MESSAGING ###
+
+# Enable/disable prompt to the player when launching a projectile and not having
+# launches enabled for themselves with /launchme
+# DEFAULT: true
+enableTogglePrompt: true
+
+# Enable/disable prompt to the player when launching is on cooldown and they attempt
+# to fire a projectile when launching is on cooldown
+# DEFAULT: true
+enableCooldownProgressPrompt: true
+
+# Enable/disable prompt to alert the player when their launch cooldown is over
+# DEFAULT: true
+enableCooldownDonePrompt: true
+
+# Enable/disable to alert the player they are riding a projectile
+# DEFAULT: true
+enableLaunchMessage: true
+
+### PROJECTILES ###
+
+# Remove or comment (#) out any of the following if you don't want players to be
+# able to be launched when they are fired
+# Disabling projectiles here also disables them for players AND mobs (if enabled)
+launchableProjectiles:
+  - ARROW
+  - EGG
+  - ENDER_PEARL
+  - THROWN_EXP_BOTTLE
+  - FIREWORK
+  - FISHING_HOOK
+  - SNOWBALL
+  - SPLASH_POTION
+  - TRIDENT

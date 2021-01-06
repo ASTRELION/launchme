@@ -1,0 +1,11 @@
+name: LaunchMe
+main: com.astrelion.LaunchMe.LaunchMe
+version: 16.0.1
+author: ASTRELION
+api-version: 1.16
+
+commands:
+  launchme:
+    description: Enable/disable projectile riding for yourself
+    usage: /launchme
+    permission: launchme
